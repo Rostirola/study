@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+    function transport (valor1, valor2) {
+        if (valor2 > (valor1 / 0.15)) {
+            return console.log(`Portanto, idealmente, o máximo de sua renda comprometida com transporte deveria ser de R$ ${valor1 / 0.15}`)
+        } else {
+            console.log(`Seus gastos estão dentro da margem recomendada.`)
+            return
+        }
+    }
+    function estud (valor1, valor2) {
+        if (valor2 > (valor1 / 0.2)) {
+            console.log(`Portanto, idealmente, o máximo de sua renda comprometida com estudo deveria ser de R$ ${valor1 / 0.2}`)
+            return
+        } else {
+            console.log(`Seus gastos estão dentro da margem recomendada.`)
+            return
+        }
+    }
+    function morad (valor1, valor2) {
+        if (valor2 > (valor1 / 0.3)) {
+            console.log(`Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R$ ${valor1 / 0.3}`)
+            return
+        } else {
+            return console.log(`Seus gastos estão dentro da margem recomendada.`)
+        }
+    }
+
+    let salario = parseInt(prompt(`Qual o seu sálario?`))
+    let moradia = parseInt(prompt(`Qual o seu gasto com moradia?`))
+    let estudo = parseInt(prompt(`Qual o seu gasto com estudo(s)?`))
+    let transporte = parseInt(prompt(`Qual o seu gasto com transporte?`))
+
+    console.log(`Renda mensal total: R$ ${salario}`)
+    console.log(`Gastos totais com moradia: R$ ${moradia}`)
+    console.log(`Gastos totais com educação: R$ ${estudo}`)
+    console.log(`Gastos totais com transporte: R$${transporte}`)
+    console.log(`Diagnóstico: `)
+    console.log(`Seus gastos totais com moradia comprometem ${(moradia * 100) / salario}% de sua renda total. O máximo recomendado é de 30%. ${morad(salario, moradia)}`)
+    console.log(`Seus gastos totais com educação comprometem ${(estudo * 100) / salario}%de sua renda total. O máximo recomendado é de  20%. ${estud(salario, estudo)}`)
+    console.log(`Seus gastos totais com transporte comprometem ${(transporte * 100) / salario}%de sua renda total. O máximo recomendado é de 15%. ${transport(salario, transporte)}`)
+</script>

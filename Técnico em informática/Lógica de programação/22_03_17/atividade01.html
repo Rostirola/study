@@ -1,0 +1,42 @@
+<meta charset="UTF-8">;
+<script>
+    let a = parseInt(prompt("Qual foi a sua nota no trabalho A? "));
+    let b = parseInt(prompt("Qual foi a sua nota no trabalho B? "));
+    let c = parseInt(prompt("Qual foi a sua nota na prova? "));
+    let media = (a + b + c) / 3
+
+    if (a < 0 || a > 100) {
+        console.log('Valor invalido, sua nota no trabalho A está incorreta! Por favor, verifique e tente novamente!')
+    } else {
+        if (b < 0 || b > 100) {
+            console.log('Valor invalido, sua nota no trabalho B está incorreta! Por favor, verifique e tente novamente!')
+        } else {
+            if (c <0 || c > 100) {
+                console.log('Valor invalido, sua nota na prova está incorreta! Por favor, verifique e tente novamente!')
+            } else {
+
+    if (media >= 70 && media <= 100) {
+        console.log('Você foi aprovado! :) Parabéns! ;)')
+    } else if (media <70 || media >= 0) {
+        console.log('Você foi reprovado! :| Mais sorte na próxima vez! ;) ')
+    }
+
+    if (media >= 0  && media <=49 ) {
+        console.log("Seu conceito foi D! :(")
+    }
+
+    if (media >= 50  && media <=69 ) {
+        console.log("Seu conceito foi C! :|")
+    }
+
+    if (media >=79 && media <=89 ) {
+        console.log("Seu conceito foi B! :)")
+    }
+
+    if (media >=90  && media <=100 ) {
+        console.log("Seu conceito foi A! ;)")
+    }
+}
+    }
+}
+</script>

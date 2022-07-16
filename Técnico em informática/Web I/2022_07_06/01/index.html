@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../TI 2022 A.png"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="inicializar()">
+    <div id="container">
+        <header>
+            <img src="../icone.png">
+            <nav>
+                <ul>
+                    <li><a href="../01/index.html">Home</a></li>
+                    <li><a href="../02/index.html">Shop</a></li>
+                    <li><a href="../03/index.html">Video aulas</a></li>
+                    <li><a href="../04/index.html">Almoxarifado</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <section>
+                <form onsubmit="salvarintegrante(event)">
+                    <input type="hidden" id="idintegrante">
+                    <label>Nome</label>
+                    <input id="nome">
+                    <label>Link</label>
+                    <input id="link">
+                    <input type="submit">
+                </form>
+                <button onclick="localStorage.clear()">Limpar</button>
+                <button onclick="document.location.reload(true);">Recarregar</button>
+                <div id="listaDeintegrantes"></div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html> 

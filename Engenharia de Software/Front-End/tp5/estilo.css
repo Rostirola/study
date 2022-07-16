@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    justify-content: space-between
+   }
+header {
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+}
+nav {
+    display: flex;
+}
+li {
+    display: inline;
+}
+#search { 
+    padding-left: 1%;
+}
+#logo {
+    width: 36px;
+    height: 36px;
+}
+div {
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: top;
+    margin: 5%
+}
+#donCasmurro {
+    width: 280px;
+    height: 290px
+}
+main {
+    background-color: red;
+}
+h1 {
+    padding-top: 5%;
+    background-color: red;
+}

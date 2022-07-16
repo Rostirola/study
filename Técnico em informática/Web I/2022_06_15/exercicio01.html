@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contador</title>
+        <style>
+            .grid {
+                grid-template-columns: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="grid"></main>
+            <h1 id="titulo">Contador</h1>
+            <label id="label">Valor Inicial Do Contador</label>
+            <input id="input" type="number">
+            <section id="display"> </section>
+            <button onclick="aumentar()">Aumentar</button>
+            <button onclick="reiniciar()">Reiniciar</button>
+            <button onclick="diminuir()">Diminuir</button>
+        </main>
+        <script>
+            let contador;
+
+            function reiniciar () {
+                let valor = parseInt(document.querySelector(`#input`).value);
+                contador = valor;
+                document.querySelector(`#display`).innerHTML = contador
+            }
+
+            function aumentar () {
+                if (contador == NaN) { 
+                    let valor = parseInt(document.querySelector(`#input`).value);
+                    contador = valor;
+                    document.querySelector(`#display`).innerHTML = contador
+                } else {
+                    contador ++
+                    document.querySelector(`#display`).innerHTML = contador
+                } 
+            }
+
+            function diminuir () {
+                if (contador == undefined) { 
+                    let valor = parseInt(document.querySelector(`#input`).value);
+                    contador = valor;
+                } else {
+                    contador --
+                    document.querySelector(`#display`).innerHTML = contador
+                }
+
+            }
+
+        </script>
+    </body>
+</html>

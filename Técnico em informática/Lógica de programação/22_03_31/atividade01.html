@@ -1,0 +1,10 @@
+<meta charset="UTF-8">;
+<script>
+    // Uma estrutura de repetição que começa no ano de inicio da copa do mundo, e vai até o ano atual, 2022, contando de 4 em 4 anos
+    for (let copa = 1930; copa <= 2022; copa = copa + 4) {
+        // Um verificador para remover os dois anos em que não houveram copa do mundo devido a segunda guerra mundial
+       if (copa != 1942 && copa != 1946) {
+        console.log(`No ano de ${copa} houve copa!`)
+       }
+    }
+</script>

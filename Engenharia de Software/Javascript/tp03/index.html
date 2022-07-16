@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="app/app.css" />
+</head>
+ 
+<body>
+  <div id="q1">
+    <label>Valor mínimo</label></br>
+    <input type='number' id='min' placeholder='Valor minimo'></br>
+    <label>Valor máximo</label></br>
+    <input type='number' id='max' placeholder='Valor maximo'></br>
+    <input type='button' value='Calcular' onClick='calculo()'>
+    <p id="r1"></p>
+  </div>
+  <div id="q2">
+    <label>Calcular fatorial de:</label></br>
+    <input type='number' id='fatorial' placeholder='ex.: 5'></br>
+    <button onClick='fatorial()'>Calcular</button>
+    <p id="r2"></p>
+  </div>
+  <div id="q3">
+    <button onClick='relatorio()'>Criar Relatorio</button>
+  </div>
+  <div id="q4">
+    <label>Quantidade de numeros</label></br>
+    <input type='number' id='quantidade' placeholder='Quantidade de numeros'></br>
+    <label>Valor minimo</label></br>
+    <input type='number' id='minimo' placeholder='Valor minimo'></br>
+    <label>Valor maximo</label></br>
+    <input type='number' id='maximo' placeholder='Valor maximo'></br>
+    <button onclick="onBtnClicked()">Calcular</button>
+    <p id="r4"></p>
+  </div>
+  <div id="q5">
+    <label>Lado A</label></br>
+    <input type='number' id='ladoA' placeholder='Lado A' onKeyPress='return SomenteNumero(event)'></br>
+    <label>Lado B</label></br>
+    <input type='number' id='ladoB' placeholder='Lado B' onKeyPress='return SomenteNumero(event)'></br>
+    <label>Lado C</label></br>
+    <input type='number' id='ladoC' placeholder='Lado C' onKeyPress='return SomenteNumero(event)'></br>
+    <button onClick='triangulo()'>Calcular</button>
+    <p id="r5"></p>
+  </div>
+  <div id="q6">
+    <div id="Nlogado">
+      <label>Login</label><br>
+      <input id="usuario" type="text" placeholder="Usuario"><br>
+      <input id="senha" type="password" placeholder="Senha"><br>
+      <button onclick="logar()">Login</button><br>
+      <div>Novo Usuario</div>
+      <input id="novoUsuario" type="text" placeholder="Usuario"><br>
+      <input id="novaSenha" type="password" placeholder="Senha"><br>
+      <button onclick="criarNovoUsuario()">Criar</button>
+    </div>
+    <div id="mensagem"></div>
+    <div id="logado" style="visibility:hidden">
+      <div>Logado</div>
+      <button onclick="deslogar()">Deslogar</button>
+    </div>
+  </div>
+
+  <script>
+    var app = {};
+    app.getComponente = function (nome) {
+      if (!app[nome]) {
+        app[nome] = { $ctrl: {} };
+      }
+      return app[nome];
+    };
+  </script>
+  <script src="q1.js"></script>
+  <script src="q2.js"></script>
+  <script src="q3.js"></script>
+  <script src="q4.js"></script>
+  <script src="q5.js"></script>
+  <script src="q6.js"></script>
+</body>
+
+</html>

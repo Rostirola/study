@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    let notas = [];
+    let maiornota = 0
+
+    for (let i = 0; i <5; i++) {
+        let nota = parseInt(prompt(`informe a nota`));
+        notas.push(nota);
+    }
+
+    let media = (notas[0] + notas[1] + notas[2] + notas[3] + notas[4]) / 5
+
+    for (a = 0; a < notas.length; a++) {
+        if (notas[a] > maiornota) {
+            maiornota = notas[a]
+        }
+    }
+
+    console.log(`A média das notas foi de ${media}, a maior nota foi ${maiornota}`)
+</script>

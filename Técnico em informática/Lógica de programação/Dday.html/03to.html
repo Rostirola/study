@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+    let nota01 = parseFloat(prompt(`Lança aí a primera nota do aluno?`));
+    let nota02 = parseFloat(prompt(`Por favor, a segunda nota do aluno?`));
+    let nota03 = parseFloat(prompt(`Quase lá meu patrão, agora só falta a terceira nota do aluno?`));
+    let media = (nota01 + nota02 + nota03) / 3
+
+    if (nota01 >= 0 && nota01 <= 100 && nota02 >= 0 && nota02 <= 100 && nota03 >= 0 && nota03 <= 100 && media >= 0 && media <= 100) {
+        if (media < 50) {
+            alert (`Ah, sinto lhe informar. porém aluno está reprovado, pois tirou menos da metade, a média final foi de ${media}.`)
+        } else if (media >= 50 && media <= 69) {
+         alert (`Há uma esperança, pois o aluno está de recuperação, pois ficou abaixo da média, a média final foi de ${media}.`)
+        } else if (media >= 70) {
+            alert (`Maravilha o aluno está aprovado, pois tirou acima da média, a média final foi de ${media}.`)
+        }
+    } else {
+        alert (`Valores inválidos meu querido, por favor confira as notas do aluno e tente novamente!`)
+    }
+
+</script>

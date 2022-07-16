@@ -1,0 +1,28 @@
+<meta charset="UTF-8">;
+<script>
+    let SalarioBruto = parseInt(prompt('Qual é o salário bruto do colaborador'))
+    let imp10 = SalarioBruto * 0.1
+    let imp15 = SalarioBruto * 0.15
+    let imp18 = SalarioBruto * 0.18
+
+    if (SalarioBruto <= 0) {
+        console.log('Ops, ele tem que ganhar alguma coisa!')
+    }
+
+    if (SalarioBruto >= 0.01 && SalarioBruto <= 1499.99) {
+        console.log('Este colaborador está isento de impostos!')
+    }
+
+    if (SalarioBruto >= 1550.00 && SalarioBruto <= 1999.99) {
+        console.log('Este colaborador recebe liquido R$' + (SalarioBruto - imp10) + '! 10% de impostos retidos na fonte')
+    }
+
+    if (SalarioBruto >= 2000.00 && SalarioBruto <= 2499.99) {
+        console.log('Este colaborador recebe liquido R$' + (SalarioBruto - imp15) + '! 15% de impostos retidos na fonte')
+    }
+
+    if (SalarioBruto >= 2500.00){
+        console.log('Este colaborador recebe liquido R$' + (SalarioBruto - imp18) + '! 18% de impostos retidos na fonte')
+    }
+
+</script>

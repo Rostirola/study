@@ -1,0 +1,15 @@
+<meta charset="UTS-8">
+<script>
+    let notas = [];
+    var calculo;
+    for (let i = 0; i <5; i++) {
+        let nota = parseInt(prompt(`informe a nota`));
+        notas.push(nota);
+    }
+
+    for (let i = 0; i < 5; i++) {
+        calculo = calculo + notas[i]
+    }
+
+    console.log(`A média é ${calculo/5}`);
+</script>

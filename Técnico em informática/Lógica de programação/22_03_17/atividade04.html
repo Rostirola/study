@@ -1,0 +1,23 @@
+<meta charset="UTF-8">;
+<script>
+    let ValorInicial = parseInt(prompt('Quanto você investiu? R$: '))
+    let ValorFinal = parseInt(prompt('Quanto você tem agora? R$: '))
+    let RegraTres = ValorFinal * 100 / ValorInicial
+    let resultado = RegraTres - 100
+
+    if (ValorInicial <= 0) {
+        console.log('Calma lá amigão, como assim você investiu negativo? não entendo!')
+    }
+
+    if (resultado == 0) {
+        console.log('Poxa amigo, parece que você teve um pequeno prejuizo, pois não lucrou e nem ficou no negativo, e até a selic rendeu nesse tempo, mas que nada, bola para a frente! Boa sorte na próxima vez! :)')
+    }
+
+    if (resultado > 0) {
+        console.log('Uau, seu lucro foi de ' + resultado + '%! ou +R$' + (ValorFinal - ValorInicial) + ' Me convida pra tomar uma qualquer hora dessas, porque você ta com dinheiro, meus parabens! ;)')
+    }
+
+    if (resultado < 0) {
+        console.log('Ihhhh, tenho uma notica não muito boa, está pronto? pois bem, seus investimentos nao renderam nenhum lucro, muito pelo contrário, eles gegaram um pejuizo de ' + resultado + '%, ou -R$' + (ValorInicial - ValorFinal) + ' mais sorte na próxima vez! :)')
+    }
+</script>

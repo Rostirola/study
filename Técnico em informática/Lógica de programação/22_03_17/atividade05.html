@@ -1,0 +1,12 @@
+<meta charset="UTF-8">;
+<script>
+    let ValroTotal = parseInt(prompt('Qual foi o valor da compra? R$: '))
+    let desconto = 5 * ValroTotal / 100
+    if (confirm('A opção de pagamento escolhida foi cartão de crédito?')) {
+        console.log('O valor total é de R$' + ValroTotal)
+        } 
+
+        if (confirm('A opção de compra foi à vista ou no débito?')) {
+            console.log('O valor total será de R$' + (ValroTotal - desconto) + '! Obrigado por contribruir com menos gastos com a maquininha de cartão!') 
+        }
+</script>

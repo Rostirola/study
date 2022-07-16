@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    // Comecei criando uma variavel para cada varial que iria necessitar
+    let segredo = 25;
+    let numDig = 0;
+    let erro = 0;
+    // Comecei então a estrutura de repetição de verificação
+    while (segredo != numDig) {
+        numDig = parseInt(prompt('Descubra o segredo'))
+        // aqui começa o verificador para saber se o numero digitado está correto ou errado
+        if (segredo == numDig) {
+                alert('Você ganhou!')
+        } else {
+                alert('Você errou!')
+                erro++
+            }
+            // Aqui é o verificador para as 3 tentativas e encerrar a estrutura de repetição para que o codigo tambem pare
+            if (erro == 3) {
+                numDig = 25
+                alert ('Voce perdeu')
+            }
+    }
+</script>

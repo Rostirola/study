@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        
+        .inline{
+            display: inline-block;
+            font-size: 2em;
+            text-align: center;
+            vertical-align: top;
+        }
+        .imagem6{
+    transition: all .5s;
+    border: 10px solid #eeeeee;
+}
+.imagem6:hover{
+    border: 10px solid #781f40;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
+}
+    </style>
+</head>
+<body>
+    <form onsubmit="salvarFilme(event)">
+    <label>Título</label>
+    <input id="titulo" type="text">
+    <label>Link da imagem</label>
+    <input id="link" type="text">
+    <button type="submit">Salvar</button>
+    </form>
+    <div id="listaDeFilmes"></div>
+    <script src="script.js"></script>
+</body>
+</html>

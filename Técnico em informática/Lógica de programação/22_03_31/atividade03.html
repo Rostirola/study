@@ -1,0 +1,14 @@
+<meta charset="UTF-8">;
+<script>
+// Uma estrutura de repetição que conta de 0 a 10 de 2 em 2 para contar somente numeros pares
+for (let tabuada = 0; tabuada <= 10; tabuada = tabuada + 2) {
+    // Um verificador para remover o zero, pois o mesmo não era requerido
+    if (tabuada != 0) {
+        // Mais uma estrutura de repetição, desta vez de 1 a 10 para servir de multiplicador
+        for (let multi = 1; multi <= 10; multi++) {
+            console.log (`${tabuada} x ${multi} = ${tabuada * multi}`)
+        }
+        console.log ('')
+    }
+}
+</script>

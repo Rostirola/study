@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+    function inss (salarioBruto) {
+        if (salarioBruto <= 1212) {
+            return salarioBruto - (salarioBruto * 0.075)
+        } else if (salarioBruto > 1212 && salarioBruto <= 2427.35) {
+           return salarioBruto - ((salarioBruto * 0.09) - 18.18)
+        } else if (salarioBruto > 2427.35 && salarioBruto <= 3641.03 ) {
+            return salarioBruto - ((salarioBruto * 0.12) - 91.01)
+        } else if (salarioBruto > 3641.03) {
+           return salarioBruto - ((salarioBruto * 0.14) - 163)
+        }
+    }
+
+    function ir (salarioInss) {
+        if (salarioInss <= 1903.98) {
+            return salarioInss - (salarioInss * 0)
+        } else if (salarioInss > 1903.98 && salarioInss <= 2826.65) {
+            return salarioInss - ((salarioInss * 0.075) - 142.80)
+        } else if (salarioInss > 2826.65 && salarioInss <= 3751.05) {
+            return salarioInss - ((salarioInss * 0.15) - 354.80)
+        } else if (salarioInss > 3751.05 && salarioInss <= 4664.68) {
+            return salarioInss - ((salarioInss * 0.225) - 636.13)
+        } else if (salarioInss > 4664.68) {
+            return salarioInss - ((salarioInss * 0.275) - 869.36)
+        }
+    }
+
+    console.log(`O salário será de ${ir(inss(parseFloat(prompt(`Qual o salário?`).replace(`,` , `.`)))).toFixed(2)}`)
+</script>

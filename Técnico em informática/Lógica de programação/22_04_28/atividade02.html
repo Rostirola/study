@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    function calculo (preço) {
+        if (preço < 50) {
+            return preço * 1.45
+        } else {
+            return preço * 1.30
+        }
+    }
+    console.log(`O valor deve ser de R$ ${calculo(parseFloat(prompt(`Qual o valor?`).replace("," , "."))).toFixed(2)}`)
+</script>

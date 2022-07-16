@@ -1,0 +1,19 @@
+<meta charset="UTF-8">;
+<script>
+    // funcção para verificar se um numero é positivo ou negativo
+   function logic (num) {
+        // Se o numero for zero ou maior
+        if (num >= 0) {
+            // Então ele é positivo
+            return true
+            // Se não
+        } else {
+            // Ele é negativo
+            return false
+        }
+    }
+    // Variavel que recebe o numero de forma inteira (sem virgula)
+    let numero = parseInt(prompt(`informe valor`));
+    // Impressão da função, informando se o numero é positivo ou negativo
+    console.log(`Este numero é positivo? ${logic(numero)}`)
+</script>

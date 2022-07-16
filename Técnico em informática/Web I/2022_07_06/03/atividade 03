@@ -1,0 +1,11 @@
+3. Criar uma página para controlar a lista de vídeos do youtube para estudar. 
+
+Consiste no cadastro de um vídeo do youtube (link) e uma descrição. 
+
+Pode ser editado o link do vídeo e a descrição
+
+pode ser excluído.
+
+deve ter uma opção para marcar que já assisti o video
+
+Essa lista deve ser salva no LocalStorage.

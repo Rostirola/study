@@ -1,0 +1,18 @@
+<meta charset="UTF-8">;
+<script>
+    //Função que verifica se um numero é par ou impar
+    function even (num) {
+        // Se (O numero, dividido por 2, for uma divisão exata)
+        if (num % 2 == 0) {
+            // Então ele é par
+            return true;
+        } else {
+            // Se não, ele é impar
+            return false
+        }
+    }
+    // Varivael que recebe o numero
+    let numero = parseInt(prompt(`numero`));
+    //Impressão do resultado da função
+    console.log(`${even(numero)}`)
+</script>

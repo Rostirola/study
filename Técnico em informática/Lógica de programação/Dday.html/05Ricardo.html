@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+
+    let nome = prompt(`Qual o nome do nosso humilde funcionário?`)
+    let salario = parseFloat(prompt(`Qual o salário atual de nobre ${nome}?`))
+    let anos = parseFloat(prompt(`A quantos anos o vosso ${nome} trabalha em nossa querida empresa?`))
+
+    function calculo (tempo, renda) {
+        if (tempo <= 3) {
+            return renda * 1.03
+        } else if (tempo > 3 && tempo <= 10) {
+            return renda * 1.125
+        } else if (tempo > 10) {
+            return renda * 1.20
+        }
+    }
+    
+    alert (`O excelentíssimo ${nome} ganhava humildes R$ ${salario} , como ele faz parte de nossa ilustre empresa a incriveis ${anos}, seu novo salário será de R$ ${calculo(anos, salario)}`)
+
+</script>

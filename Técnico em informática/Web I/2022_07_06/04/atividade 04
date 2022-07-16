@@ -1,0 +1,7 @@
+4. Criar uma página para controlar uma lista de produtos vendidos por um bar, como por exemplo: refri, cerveja, pizza, porção de fritas. 
+
+o produto tem um nome e preço e imagem
+
+o produto pode ser editado e excluído.
+
+essa lista deve ser salva no local storage

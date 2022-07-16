@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function preco (valor) {
+        if (valor<50) {
+            return valor*1.45
+        } else {
+            return valor*1.30
+        }
+    };
+    
+    console.log("O valor deve ser de R$ "+preco(parseFloat(prompt(`Qual o custo?`))));
+
+</script>

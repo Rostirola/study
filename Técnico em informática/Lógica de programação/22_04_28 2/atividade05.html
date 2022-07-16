@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function INSS (salario) {
+        if (salario<=1212.00) {
+            return salario-(salario*0.075)
+        } else if (salario>1212.00&&salario<=2427.35) {
+           return salario-((salario*0.09)-18.18)
+        } else if (salario>2427.35&&salario<=3641.03 ) {
+            return salario-((salario*0.12)-91.01)
+        } else if (salario>3641.03) {
+           return salario-((salario*0.14)-163)
+        }
+    };
+
+    function imposto (salario2) {
+        if (salario2<=1903.98) {
+            return salario2-(salario2*0)
+        } else if (salario2>1903.98&&salario2<=2826.65) {
+            return salario2-((salario2*0.075)-142.80)
+        } else if (salario2>2826.65&&salario2<=3751.05) {
+            return salario2-((salario2*0.15)-354.80)
+        } else if (salario2>3751.05&&salario2<=4664.68) {
+            return salario2-((salario2*0.225)-636.13)
+        } else if (salario2>4664.68) {
+            return salario2-((salario2*0.275)-869.36)
+        }
+    };
+
+    console.log("O salário será de "+imposto(INSS(parseFloat(prompt("Qual o seu salário?")))));
+
+</script>

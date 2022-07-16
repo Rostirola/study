@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo 01</title>
+        <style>
+            body {
+                background-color: #4ac2e7;
+            }
+            #resultado {
+                border: 1px solid red;
+                border-radius: 6px;
+                min-height: 20px;
+                width: 200px;
+                background-color: aliceblue;
+            }
+            button {
+                background: #ffffff;
+                border: 1px solid whitesmoke;
+                border-radius: 3px;
+                padding: 6px 12px;
+                color: black;
+            }
+            button:hover {
+                background-color: blue;
+                color: aliceblue;
+            }
+            .label-input {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <label class="label-input">Nome</label> <br/>
+            <input id="nome" type="text"> <br/>
+
+            <label class="label-input">Nota 1</label> <br/>
+            <input id="nota1" type="number"> <br/>
+
+            <label class="label-input">Nota 2</label> <br/>
+            <input id="nota2" type="number"> <br/>
+
+            <br/>
+            <p>Média para aprovação 7</p>
+            <p>- reprovado - vermelho</p>
+            <p>- aprovado - verde</p>
+            <div class="calculo" id="resultado"></div>
+
+            <button onclick="calcularnota()">Calcular</button>
+
+            <script>
+                function calcularnota () {
+                    let nota1 = parseInt(document.querySelector(`#nota1`).value);
+                    let nota2 = parseInt(document.querySelector(`#nota2`).value);
+                    let nome = document.querySelector(`#nome`).value;
+                    let media = (nota1 + nota2) / 2;
+                    
+                        document.querySelector(`#resultado`).innerHTML = nome + ` Média ` + media;
+
+                        if (media < 7) {
+                            document.querySelector(`#resultado`).style.color = `red`;
+                        } else {
+                            document.querySelector(`#resultado`).style.color = `green`;
+                        }
+                }
+            </script>
+        </main>
+    </body>
+</html>

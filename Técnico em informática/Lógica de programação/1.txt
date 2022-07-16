@@ -1,0 +1,15 @@
+1 - Mover o disco #1 para a coluna 2
+2 - Mover o disco #2 para a coluna 3
+3 - Mover o disco #1 para a coluna 3
+4 - Mover o disco #3 para a coluna 2
+5 - Mover o disco #1 para a coluna 1
+6 - Mover o disco #2 para a coluna 2
+7 - Mover o disco #1 para a coluna 2
+8 - Mover o disco #4 para a coluna 3
+9 - Mover o disco #1 para a coluna 3
+10 - Mover o disco #2 para a coluna 1
+11 - Mover o disco #1 para a coluna 1
+12 - Mover o disco #3 para a coluna 3
+13 - Mover o disco #1 para a coluna 2
+14 - Mover o disco #2 para a coluna 3
+15 - Mover o disco #1 para a coluna 3

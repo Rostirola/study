@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    let capitalInicial = parseInt(prompt('Valor investido: '));
+    let capitalFinal = parseInt(prompt('Valor final: '));
+    let variavel = capitalFinal - capitalInicial;
+    let porcentagem =  capitalFinal * 100 / capitalInicial - 100;
+    if (variavel > 0) { 
+        console.log('Lucro de: ' + variavel);
+        console.log(porcentagem + '%');
+    } else {
+        console.log('Prejuizo de: ' + variavel);
+        console.log(porcentagem + '%');
+    }
+</script>

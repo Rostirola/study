@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;    
+}
+
+body {
+    background-color: rgb(251, 251, 251);
+    font-family:'Krona One',sans-serif;
+    font-size:1em;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 49, 71);
+    align-items: center;
+    z-index: 2;
+}
+
+nav {
+    float: right;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    height: fit-content;
+    position: relative;
+}
+
+footer {
+    background-color: rgb(0, 49, 71);
+}
+
+iframe {
+    height: 60vh;
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
+    border: 1px black;
+    border-collapse: collapse;
+    padding: 1%;
+    text-indent: initial;
+    border-spacing: 2px;
+    text-align: left;
+    font-size: 1rem;
+    
+}
+table td, table th {
+    white-space: nowrap;
+    padding: 5px;
+    text-align: left;
+    border: 1px rgb(70, 73, 68);
+    font-size: 1vw;
+    max-height: 1vh;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr {
+    color: rgb(70, 73, 68);
+}
+
+td {
+    border: 1px rgb(70, 73, 68);
+    vertical-align: middle;
+}
+
+th {
+    background-color: rgb(0, 49, 71);
+    color: white;
+}
+
+h1 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: white;
+} 
+
+h2 {
+    color: rgb(0, 49, 71);
+    text-transform: uppercase;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12vh;
+    margin-bottom: 8vh;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+input {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+label {
+    margin: 3vw;
+    padding: 1vw;
+}
+
+input {
+    max-width: 20vw;
+    height: 2vh;
+}
+
+button {
+    max-width: 20vw;
+    background-color: rgb(0, 49, 71);
+    color: white;
+    height: 2vh;
+}
+
+tr td {
+    text-align: center;
+    
+}
+
+tfoot tr td {
+    white-space: nowrap;
+  
+    text-align: left;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+}
+
+li a {
+    color: white;
+}
+
+header div {
+    display: flex;
+    margin: 0.4vw;
+}
+
+header div p {
+    color: white;
+    margin: 0.5vw;
+}
+
+main div div p {
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.partidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partidos p {
+    color: black;
+    margin-top: 1vh;
+}
+
+.partidos a {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.spirit {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.deputados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+}
+
+.meio {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    width: 100vw;
+    margin-left: 40vw;
+    margin-bottom: 5vh;
+}
+
+.deputados > p {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(70, 73, 68);
+}
+
+.deputados li {
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-facebook {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.sprite-instagram {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -5px;
+}
+
+.sprite-twitter {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -35px;
+}
+
+#inicio {
+    background-image: url("plenario-camara.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 75vh;
+}
+
+#mainMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#responsividade {
+    overflow-y: auto;
+}
+
+#plenario {
+    align-items: center;
+}
+
+#estrutura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+#menuA {
+    background-color: rgb(0, 49, 71);
+    border-radius: 1vw;
+    padding: 2vw;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 2vw;
+}
+
+#not {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+    margin: 0 auto;
+  
+}
+
+#not img{
+   
+    max-width: 50vw;
+}
+
+#noti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#principal #at {
+ margin-top: 5%;
+}
+
+#principal section {
+    max-height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+#at {
+    margin: 0;
+}
+
+#principal section h1 {
+    font-size: 1vw;
+    color: black;
+}.spirit
+
+#principal section h2 {
+    font-size: 1vw;
+    justify-content: flex-start;
+    margin: 1vh;
+}
+
+#principal section h3 {
+    font-size: 1vw;
+    margin: 1vh;
+}
+
+#principal section p {
+    margin: 1.5vh;
+}
+
+
+
+#cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    height: 30vh;
+}
+
+#conta {
+    width: 50vw;
+}
+
+#conta input {
+    padding: 0.5vh 8vw;
+    margin: 1vh;
+}
+
+#conta textarea {
+    padding: 5vh 8vw;
+    margin: 1vh;
+}
+
+#conta button {
+    padding: 0.5vh 12vw;
+    margin: 1vh;
+}
+
+#contat {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 50vw;
+    height: 25vh;
+}
+
+#contat p {
+    color: rgb(70, 73, 68);
+}
+
+#contat ul {
+    list-style: circle;
+}
+
+#contat ul li {
+    text-align: justify;
+    margin: 2vh;
+    text-decoration: underline;
+    font-size: 1vw;
+}
+
+#noti a {
+    color: white;
+    border-radius: 5%;
+    padding: 1vh 7vw;
+    background-color: rgb(0, 49, 71);
+    text-decoration: underline;
+}
+
+#noti p {
+    color: black;
+}
+
+#noticias p {
+    text-align: center;
+}
+
+#menuA a {
+    color: white;
+    font-size: 1vw;
+}
+
+#menu li {
+    display: inline;
+    margin: 0.5vw;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#plenario p {
+    text-align: center;
+    margin-top: 2vh;
+
+}
+
+#plenario a {
+    text-decoration: underline;
+}
+
+
+#bancadas p {
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#bancadas a {
+ font-size: 1vw;
+ display: flex;
+ justify-content: center;
+ margin-top: 3vh;
+ text-decoration: underline;
+}
+
+#menu ul li a {
+    display: block; 
+}
+
+#contato li {
+    text-align: center;
+    align-items: center;
+}
+
+#titulo  {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 2vw;
+}
+
+a:hover {
+    transform: scale(1.5);
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+#menu ul li a:hover {
+    background-color: yellow;
+}
+
+footer p {
+    width: 30vw;
+    margin: 0 auto;
+}
+
+footer a {
+    margin-left: 95vw;
+}
+
+@media (max-width: 500px) {
+
+    .meio input {
+        padding: 5% 25%;
+    }
+
+    .meio button {
+        padding: 10% 35%;
+    }
+
+    .deputados p {
+        font-size: 125%;
+    }
+
+    .partidos p {
+        font-size: 125%;
+    }
+
+    #bancadas p {
+        font-size: 125%;
+    }
+
+    footer {
+        min-width: 180vw;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+   table {
+    min-width: 100vw;
+   }
+
+    #inicio {
+        background-image: url("plenario-camara.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 180vw;
+        text-align: center;
+        height: 50vh;
+    }
+
+    header {
+        min-width: 180vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(0, 49, 71);
+        align-items: center;
+        z-index: 2;
+    }
+
+}
+@media (min-width:501px) and (max-width: 1025px) {
+    /* Altamente responsivel até 500px */
+}
+@media (max-width: 1281px) {
+    /* Altamente responsivel até 500px */
+}

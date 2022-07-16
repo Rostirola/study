@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+
+    let comprimento = parseFloat(prompt(`Qual o comprimento do terreno??`))
+    let largura = parseFloat(prompt(`Qual a largura do terreno?`))
+    let calculo = comprimento * largura
+
+    if (comprimento >= 0 && largura >= 0 && calculo >= 0) {
+        if (calculo <= 100) {
+            console.log (`O terreno mede ${calculo} m²`)
+            console.log (`Ok, este é um terreno popular`)
+        } else if (calculo > 100 && calculo <= 500) {
+            console.log (`O terreno mede ${calculo} m²`)
+            console.log (`Nossa, este é um terreno master`)
+        } else if (calculo > 500) {
+            console.log (`O terreno mede ${calculo} m²`)
+            console.log (`Uau temos algém muito importante aqui, pois este é um terreno vip`)
+        }
+    } else {
+        alert (`Valores inválidos meu querido, por favor confira os dados e tente novamente!`)
+    }
+
+</script>

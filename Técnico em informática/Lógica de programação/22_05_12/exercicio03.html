@@ -1,0 +1,19 @@
+<meta charset="UTS-8">
+<script>
+    let notas = [2,4,3,8,9,10,11,15];
+    let notas2 = [11,15,20,30,40,2]
+    var notas3 = []
+    var calculo
+    var calculo2
+
+
+    for (let i = 0; i < notas.length; i++) {
+        calculo = notas[i]
+        for (let l = 0; l <notas2.length; l++) {
+            calculo2 = notas2[l]
+            if(calculo == calculo2) {
+            notas3.push(calculo);
+            }
+        }
+    }
+</script>
